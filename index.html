@@ -9,6 +9,64 @@
 </head>
 <body>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="images/logo.png" alt="Aloha logo" height="40">
+                </a>
+                <ul class="navbar-nav flex-row gap-4">
+                    <li class="nav-item"><a class="nav-link" href="#propiedades">Propiedades</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                </ul>
+                <button class="btn" type="button" aria-label="Carrito">
+                    <i class="bi bi-cart"></i> Carrito
+                </button>
+            </div>
+        </nav>
+
+        <section aria-label="Hero">
+            <div class="container-fluid p-0 position-relative">
+                <img src="images/hero-beach.png" alt="Playa paradisíaca" class="img-fluid w-100">
+                <div class="position-absolute top-50 start-50 translate-middle text-center">
+                    <h1>Tu próximo alojamiento te espera</h1>
+                    <p>Descubre los mejores alojamientos en los destinos más increíbles del Perú. Reserva simple, experiencias únicas.</p>
+                </div>
+            </div>
+        </section>
+
+        <section aria-label="Filtros de búsqueda">
+            <div class="container">
+                <form class="row g-2 align-items-end">
+                    <div class="col-12 col-md">
+                        <label for="ubicacion" class="form-label">Ubicación</label>
+                        <input type="text" class="form-control" id="ubicacion" placeholder="¿A dónde vas?">
+                    </div>
+                    <div class="col-12 col-md">
+                        <label for="precioMax" class="form-label">Precio Máx</label>
+                        <input type="number" class="form-control" id="precioMax" placeholder="S/ máximo">
+                    </div>
+                    <div class="col-12 col-md">
+                        <label for="tipoAlojam" class="form-label">Tipo Alojam.</label>
+                        <select class="form-select" id="tipoAlojam">
+                            <option value="" selected disabled>Seleccionar</option>
+                            <option value="casa">Casa</option>
+                            <option value="cabana">Cabaña</option>
+                            <option value="departamento">Departamento</option>
+                            <option value="hotel">Hotel</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md">
+                        <label for="huespedes" class="form-label">Huéspedes</label>
+                        <input type="number" class="form-control" id="huespedes" placeholder="Nº de huéspedes" min="1">
+                    </div>
+                    <div class="col-12 col-md-auto">
+                        <button type="submit" class="btn btn-primary w-100">Buscar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </header>
 </body>
 </html>
