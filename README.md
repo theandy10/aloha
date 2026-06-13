@@ -1,4 +1,4 @@
-# Proyecto
+# Aloha
 
 Proyecto web con HTML, Bootstrap 5 y CSS.
 
@@ -17,3 +17,4 @@ projecto/
 - HTML5
 - Bootstrap 5.3.3
 - CSS3
+- Git
