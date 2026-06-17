@@ -385,6 +385,6 @@ footer .text-center {
 }
 
 .badge {
-  background-color: #f5f1f1e3 !important; /* tu color */
-  color: #000000;                        /* color del texto */
+    background-color: #f5f1f1e3 !important;
+    color: #000000;
 }
